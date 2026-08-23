@@ -641,7 +641,7 @@ it also ran a real mathematical Fast Fourier Transform (FFT) the exact same math
 ou shii ![alt text](pics/image-45.png) since im using matlab free version i only have 20 hours per month :scared_skull: 
 
 # 22/08/2026 
-# *time spent: 2h*
+# *time spent: 4h*
 
 so i made a github repo filled it withall necessary file and such wrote the readme.md also organised the repo as correctly as possible added image to polish and renders 
 also i spend over 2h on journalling on this project ![alt text](pics/image67.png)
