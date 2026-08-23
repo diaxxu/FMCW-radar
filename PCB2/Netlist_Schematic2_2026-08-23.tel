@@ -1,0 +1,52 @@
+$PACKAGES
+C0402 ! C0402 ! 100nF ; C3 Cbyp Cbyp1 Cbyp2 
+C0402 ! C0402 ! 10nF ; C4 
+C0402 ! C0402 ! 1uF ; C5 C7 
+C0603 ! C0603 ! 100pF ; C6 
+C0603 ! C0603 ! 10uF ; C1 C2 
+CONN-TH_S2B-PH-K-S-GW ! CONN-TH_S2B-PH-K-S-GW ! '{Value}' ; U3 
+,
+        HDR-TH_3P-P2.54-V-M_PZ254V-11-03P ! HDR-TH_3P-P2.54-V-M_PZ254V-11-03P ! '{Value}' ,
+        ; H2 
+HDR-TH_4P-P2.54-V-M ! HDR-TH_4P-P2.54-V-M ! '{Value}' ; H1 
+R0402 ! R0402 ! '10kΩ' ; R1 R2 R4 
+R0402 ! R0402 ! '1kΩ' ; R3 R5 R6 
+RES-ADJ-TH_3296W ! RES-ADJ-TH_3296W ! '100kΩ' ; R7 
+SMA_L4.3-W2.6-LS5.2-RD ! SMA_L4.3-W2.6-LS5.2-RD ! '{Value}' ; D1 
+SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL ! SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL ! '{Value}' ,
+        ; U5 
+SOP-8_L4.9-W3.9-P1.27-LS6.0-BL ! SOP-8_L4.9-W3.9-P1.27-LS6.0-BL ! '{Value}' ; ,
+        U1 
+,
+        SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR ! SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR ! '{Value}' ,
+        ; U2 
+,
+        SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR ! SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR ! '{Value}' ,
+        ; U4 
+,
+        SW-SMD_MST-12D18G4-SPDT-SLIDE-SWITCH ! SW-SMD_MST-12D18G4-SPDT-SLIDE-SWITCH ! '{Value}' ,
+        ; SW1 
+$A_PROPERTIES
+$NETS
+'+5v' ; H1.1 U2.2 U2.4 U4.1 U4.3 
+'$1N1' ; SW1.2 U3.1 
+'$1N10' ; C2.2 C4.1 U4.4 
+'$1N13' ; C3.1 R1.2 R2.2 U1.3 
+'$1N22' ; C5.1 R3.1 
+'$1N23' ; C6.2 R3.2 R4.1 U1.6 
+'$1N25' ; C6.1 C7.2 R4.2 U1.7 
+'$1N3' ; D1.2 SW1.3 
+'$1N31' ; R5.2 R6.2 U5.2 
+'$1N32' ; R6.1 R7.3 
+'$1N4' ; C1.2 D1.1 U2.3 
+'$1N48' ; U5.6 U5.7 
+'3.3v' ; C2.1 Cbyp1.1 Cbyp2.1 Cbyp.1 R1.1 U1.8 U4.5 U5.8 
+'IF_ADC_IN' ; H2.3 R7.1 R7.2 U5.1 
+'IF_BANDPASS' ; C7.1 R5.1 
+'IF_OUT_RAW' ; C5.2 H1.3 
+'V_MID' ; H2.2 U1.1 U1.2 U1.5 U5.3 U5.5 
+'V_TUNE' ; H1.4 
+GND ; C1.1 C3.2 C4.2 Cbyp1.2 Cbyp2.2 Cbyp.2 H1.2 H2.1 R2.1 U1.4 U2.1 U3.2 U4.2 ,
+        U5.4 
+$SCHEDULE
+$END
