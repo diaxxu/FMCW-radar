@@ -4,7 +4,7 @@ This project is a 2.4 GHz Frequency Modulated Continuous Wave (FMCW) radar syste
 The system is split into two specialized printed circuit boards (PCBs) and utilizes dual patch antennas: one for transmitting via a 3D-printed, aluminum-lined convex horn to maximize range, and one for receiving weak deflected echo signals.
 
 ## Why I Built It
-Built purely for engineering passion and hands-on learning, this project served as a deep dive into radar principles, high-frequency RF routing, embedded multitasking, and mechanical CAD design.
+Built purely for engineering passion coolness, this project helped me learn radar principles, high-frequency RF routing, embedded multitasking, and mechanical CAD design.
 
 ---
 
@@ -46,7 +46,7 @@ The gimbal is engineered for structural rigidity with zero mechanical play, feat
 ---
 
 ## Ground Control Station (GCS)
-Built using Python and PyQt6, the custom GCS features a tactical, movie-style interface complete with real-time target plotting, Track-While-Scan (TWS), and Single-Target Tracking (STT) modes.
+Built using Python and PyQt6, i made it so that its cooler than what you see in the movie 
 
 ![Ground Control Station Interface](pics/image-42.png)
 
