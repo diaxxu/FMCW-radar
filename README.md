@@ -1,47 +1,59 @@
-## FMCW RADAR 
-This radar use 2.4ghz frequency to track and map 2d terrain its 360 degree and 90 deg up and down 
-it composed of 2 pcb board each their job and 2 patch antenna one for transmitting with a horn and one for receiveing the weak signal coming back after being deflected 
+## FMCW Radar
+This project is a 2.4 GHz Frequency Modulated Continuous Wave (FMCW) radar system designed for 2D terrain mapping and object tracking. The mechanical assembly features full 360-degree pan rotation and $\pm 90^\circ$ tilt articulation. 
 
-## why did i make it 
-just for fun and learning its really great i learn the principle of radars and high frequency routing thru it 
+The system is split into two specialized printed circuit boards (PCBs) and utilizes dual patch antennas: one for transmitting via a 3D-printed, aluminum-lined convex horn to maximize range, and one for receiving weak deflected echo signals.
 
-## pcb1 
-### schema 
-![schema](pics/sc1.png)
+## Why I Built It
+Built purely for engineering passion and hands-on learning, this project served as a deep dive into radar principles, high-frequency RF routing, embedded multitasking, and mechanical CAD design.
 
-### pcb
-![schema](pics/pc1.png)
+---
 
-### 3D render 
+## PCB 1: RF Front-End
+### Schematic
+![RF Schematic](pics/sc1.png)
 
-![schema](pics/3d1.png)
+### PCB Layout
+![RF PCB Layout](pics/pc1.png)
 
-## pcb2 
-### schema 
-![schema](pics/sc2.png)
+### 3D Render
+![RF 3D Render](pics/3d1.png)
 
-### pcb
-![schema](pics/pc2.png)
+---
 
-### 3D render 
+## PCB 2: Baseband Signal Processing
+### Schematic
+![Baseband Schematic](pics/sc2.png)
 
-![schema](pics/3d2.png)
+### PCB Layout
+![Baseband PCB Layout](pics/pc2.png)
 
-### MCU
-the microcontroller that is going to control the radar and the gimbal is the esp32 cuz it has two core perfect for multitasking and a 240mhz running rate
+### 3D Render
+![Baseband 3D Render](pics/3d2.png)
 
-# CAD
-![schema](pics/frontass.png)
-a structural stiff gimbal to carry all the weight without play it feature a dual bearing for extra stifness and screws and nut 
-![schema](pics/r1.png)
-![schema](pics/r2.png)
+### Microcontroller (MCU)
+The system is powered by an **ESP32** microcontroller, chosen for its dual-core architecture (ideal for handling parallel DSP routines and motor control tasks) and 240 MHz clock speed.
 
+---
 
-# Ground control station 
-built with pyqt app maker i made it so that its cooler than what you see in the movie 
-![schema](pics/image-42.png)
+## Mechanical CAD Design
+![Full Assembly](pics/frontass.png)
 
-# BOM 
+The gimbal is engineered for structural rigidity with zero mechanical play, featuring a dual-bearing aluminum support assembly secured with precision hardware.
+
+![Gimbal Detail 1](pics/r1.png)
+![Gimbal Detail 2](pics/r2.png)
+
+---
+
+## Ground Control Station (GCS)
+Built using Python and PyQt6, the custom GCS features a tactical, movie-style interface complete with real-time target plotting, Track-While-Scan (TWS), and Single-Target Tracking (STT) modes.
+
+![Ground Control Station Interface](pics/image-42.png)
+
+---
+
+## Bill of Materials (BOM)
+
 | Component | Qty | Price |
 | :--- | :---: | :--- |
 | pcb1 | 5 | $42.00 |
